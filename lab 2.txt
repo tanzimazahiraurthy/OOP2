@@ -1,0 +1,15 @@
+using System;
+
+
+namespace First_Project
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+   System.Console.WriteLine("Tanzima Zahir");
+         System.Console.WriteLine("hello world");
+     
+        }
+    }
+}
