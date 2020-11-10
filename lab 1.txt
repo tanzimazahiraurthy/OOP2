@@ -20,7 +20,7 @@ namespace Lab1
             Console.WriteLine("Dividing of the two number is : " + d);
 
             int e = -5 + 8 * 6;
-            int f = (55 + 9) % 9;
+            int f = (11 + 5) % 9;
             double g = 20 + -3 * 5 / 8;
             double h = 5 + 15 / 3 * 2 - 8 % 3;
             Console.WriteLine("Answer of question 4(a) : " + e);
