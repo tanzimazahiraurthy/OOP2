@@ -1,0 +1,12 @@
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\bin\Debug\LabTask-2.exe.config
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\bin\Debug\LabTask-2.exe
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\bin\Debug\LabTask-2.pdb
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\obj\Debug\LabTask-2.csprojAssemblyReference.cache
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\obj\Debug\LabTask_2.Form1.resources
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\obj\Debug\LabTask_2.Form2.resources
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\obj\Debug\LabTask_2.Form3.resources
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\obj\Debug\LabTask_2.Properties.Resources.resources
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\obj\Debug\LabTask-2.csproj.GenerateResource.cache
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\obj\Debug\LabTask-2.csproj.CoreCompileInputs.cache
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\obj\Debug\LabTask-2.exe
+D:\Codyard\C#Huhu\LabTask-2\LabTask-2\obj\Debug\LabTask-2.pdb
