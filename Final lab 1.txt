@@ -1,0 +1,298 @@
+Test interface 1 (calculator)
+
+
+
+
+************* BASIC CALCULATOR INTERFACE ****************
+
+
+using System;
+
+
+
+namespace Calculator
+{
+         interface BasicCalculatorInterface
+       {
+			 
+        int Sum(int x,int y);
+			 
+        int Sub(int x, int y);
+        int Multiplication(int x,int y);
+        int Division(int x, int y);
+    }
+      }
+
+
+
+
+
+
+*******************BASIC CALCULATOR *************
+
+
+using System;
+namespace Calculator
+{
+       class BasicCalculator:BasicCalculatorInterface
+    {
+	
+	 public int Sum(int x, int y)
+        {
+            int z = x + y;
+            return z;
+        } 
+		
+		
+		 public int Sub(int x, int y)
+        {
+            int z = x - y;
+            return z;
+        }
+		
+		 public int Multiplication(int x, int y)
+        {
+            int z = x * y;
+            return z;
+        }
+        public int Division(int x, int y)
+        {
+            int z = x / y;
+            return z;       
+      }
+    }
+   }
+
+
+
+
+
+
+
+********************* SCIENTIFIC CALCULATOR INTERFACE ********************
+
+using System;
+namespace Calculator
+{
+    interface ScientificCalculatorInterface
+    {
+        int XtoY(int x,int y);
+        double Root(int x);
+        
+    }
+  }
+
+
+
+
+
+
+***************** SCIENTIFIC CALCULATOR ***************
+
+
+using System;
+
+namespace Calculator
+{
+    class ScientificCalculator:ScientificCalculatorInterface
+    {
+      
+        public double Root(int x)
+        {
+            double root = Math.Sqrt(x);
+            return root;
+        }
+
+      public int XtoY(int x, int y)
+      }
+     }
+
+
+
+
+
+
+************* PROGRAM ***********
+
+using System;
+
+namespace Calculator 
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Basic Calculator");
+            
+     BasicCalculator bc = new BasicCalculator();
+			
+           Console.WriteLine("Sum:"+bc.Sum(9,3));
+            Console.WriteLine("Sub:"+bc.Sub(9,3));
+            Console.WriteLine("Multiplication:"+bc.Multiplication(9,3));
+            Console.WriteLine("Division:"+bc.Division(9,3));
+
+           
+            
+            Console.WriteLine("Scientific Calculator");
+			
+		 ScientificCalculator sc = new ScientificCalculator();
+            
+            
+            Console.WriteLine("Root:"+sc.Root(9));
+           
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+Test interface 2 (Bank Account) 
+
+
+
+
+*************ACCOUNT*************
+
+
+using System;
+namespace BankAccount
+{
+    abstract class Account
+    {
+        public string AccountNo { get; set; }
+        public string AccountName { get; set; }
+        public double Balance { get; set; }
+
+        public Account() { } 
+		
+		 public Account(string accno)
+        {
+            this.AccountNo=accno; 
+		 } 
+		public Account(string accname)
+		{
+            this.AccountName=accname; 
+		} 
+		
+		public Account (double balance) 
+		{
+            this.Balance=balance;
+        }
+
+       
+      public void deposit(double amount)
+        {
+            Balance+= amount;
+        }
+        public abstract void Withdraw(double amount);
+        
+        public void ShowInfo()
+        {
+            Console.WriteLine("Account No " +AccountNo);
+            Console.WriteLine("Account Name " +AccountName);
+            Console.WriteLine("Account Balance " +Balance);
+        } 
+	  }
+    }  
+
+
+
+
+
+
+*************SAVING ********
+
+
+using System;
+
+namespace BankAccount
+{
+    class SavingAccount :Account
+    {
+       public SavingAccount() { }
+
+       public SavingAccount(string accno, string accname, double balance) : base (accno,
+            accname,balance)  ;
+     
+        public override void Withdraw(double amount)
+        {
+            if (Balance-amount>= 1000)
+            {
+                Balance-= amount;
+            }
+            else
+            {
+                Console.WriteLine("Insufficient balance");
+            }
+          }
+      }
+   }
+
+
+
+
+
+
+
+***************OVER DRAFT *********
+
+
+using System;
+namespace BankAccount
+{
+    class OverDraft:SavingAccount
+    {
+        public Overdraft() {}
+
+        public Overdraft(string accno, string accname, double balance) : base(accno,
+            accname, balance) ;
+       
+        public override void Withdraw(double amount)
+        
+   
+            {
+                if (amount< Balance)
+                {
+                 Balance-= amount;
+                 }
+                
+                else
+                {
+                    Console.WriteLine("Insufficient balance");
+                }
+            }
+    } 
+}
+
+
+
+
+
+
+
+************PROGRAM***********
+
+
+
+using System;
+namespace BankAccount
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Account acc1 = new SavingAccount("8452641","Tanzima Zahir",8956);
+            Account acc2 = new Overdraft("5154122","Nazia Fatema", 10568);
+
+
+
+
+
