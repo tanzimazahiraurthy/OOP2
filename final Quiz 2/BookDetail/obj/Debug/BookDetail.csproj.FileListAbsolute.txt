@@ -1,0 +1,10 @@
+H:\CodeC#\BookDetail\BookDetail\bin\Debug\BookDetail.exe.config
+H:\CodeC#\BookDetail\BookDetail\bin\Debug\BookDetail.exe
+H:\CodeC#\BookDetail\BookDetail\bin\Debug\BookDetail.pdb
+H:\CodeC#\BookDetail\BookDetail\obj\Debug\BookDetail.Form1.resources
+H:\CodeC#\BookDetail\BookDetail\obj\Debug\BookDetail.Properties.Resources.resources
+H:\CodeC#\BookDetail\BookDetail\obj\Debug\BookDetail.csproj.GenerateResource.cache
+H:\CodeC#\BookDetail\BookDetail\obj\Debug\BookDetail.csproj.CoreCompileInputs.cache
+H:\CodeC#\BookDetail\BookDetail\obj\Debug\BookDetail.exe
+H:\CodeC#\BookDetail\BookDetail\obj\Debug\BookDetail.pdb
+H:\CodeC#\BookDetail\BookDetail\obj\Debug\BookDetail.csprojAssemblyReference.cache
